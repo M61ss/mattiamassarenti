@@ -1,134 +1,42 @@
 ---
-
+import TimestepLeft from "./TimestepLeft.astro";
+import TimestepRight from "./TimestepRight.astro";
 ---
 
 <ul
   class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical p-6"
 >
-  <li>
-    <div class="timeline-middle">
-      <svg
+  <TimestepLeft date="2022" title="Diploma di liceo classico">
+    Nel 2022 ho ottenuto il diploma di liceo classico presso il Liceo Classico
+    "Rinaldo Corso" di Correggio (RE).
+  </TimestepLeft>
+  <TimestepRight date="2025" title="Laurea Triennale in Ingegneria Informatica">
+    <p class="pb-3">
+      Il 16 ottobre 2025 ho conseguito la Laurea Triennale in Ingegneria
+      Informatica presso il Dipartimento di Ingegneria "Enzo Ferrari" di Modena
+      con la valutazione di 96/110.
+      <br />
+      Il mio elaborato finale si è svolto nell'ambito dell'intelligenza artificiale.
+      Lo scopo finale era quello di sviluppare un sistema che, su richiesta dell'utente,
+      fosse in grado di effettuare Retrieval Augmented Generation (RAG) online per
+      un Large Language Model (LLM) eseguito localmente. Per chiunque volesse maggiori
+      dettagli sul mio elaborato, è possibile scaricarne una copia premendo il seguente
+      pulsante:
+    </p>
+    <button class="btn btn-primary"
+      >Elaborato Finale Massarenti <svg
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
+        width="20"
+        height="20"
         fill="currentColor"
-        class="h-5 w-5"
+        class="bi bi-filetype-pdf"
+        viewBox="0 0 16 16"
       >
         <path
           fill-rule="evenodd"
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-          clip-rule="evenodd"></path>
-      </svg>
-    </div>
-    <div class="timeline-start mb-10 md:text-end">
-      <time class="font-mono italic">1984</time>
-      <div class="text-lg font-black">First Macintosh computer</div>
-      The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple
-      Macintosh personal computer. It played a pivotal role in establishing desktop
-      publishing as a general office function. The motherboard, a 9 in (23 cm) CRT
-      monitor, and a floppy drive were housed in a beige case with integrated carrying
-      handle; it came with a keyboard and single-button mouse.
-    </div>
-    <hr />
-  </li>
-  <li>
-    <hr />
-    <div class="timeline-middle">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        class="h-5 w-5"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-          clip-rule="evenodd"></path>
-      </svg>
-    </div>
-    <div class="timeline-end md:mb-10">
-      <time class="font-mono italic">1998</time>
-      <div class="text-lg font-black">iMac</div>
-      iMac is a family of all-in-one Mac desktop computers designed and built by Apple
-      Inc. It has been the primary part of Apple's consumer desktop offerings since
-      its debut in August 1998, and has evolved through seven distinct forms
-    </div>
-    <hr />
-  </li>
-  <li>
-    <hr />
-    <div class="timeline-middle">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        class="h-5 w-5"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-          clip-rule="evenodd"></path>
-      </svg>
-    </div>
-    <div class="timeline-start mb-10 md:text-end">
-      <time class="font-mono italic">2001</time>
-      <div class="text-lg font-black">iPod</div>
-      The iPod is a discontinued series of portable media players and multi-purpose
-      mobile devices designed and marketed by Apple Inc. The first version was released
-      on October 23, 2001, about 8+1⁄2 months after the Macintosh version of iTunes
-      was released. Apple sold an estimated 450 million iPod products as of 2022.
-      Apple discontinued the iPod product line on May 10, 2022. At over 20 years,
-      the iPod brand is the oldest to be discontinued by Apple
-    </div>
-    <hr />
-  </li>
-  <li>
-    <hr />
-    <div class="timeline-middle">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        class="h-5 w-5"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-          clip-rule="evenodd"></path>
-      </svg>
-    </div>
-    <div class="timeline-end md:mb-10">
-      <time class="font-mono italic">2007</time>
-      <div class="text-lg font-black">iPhone</div>
-      iPhone is a line of smartphones produced by Apple Inc. that use Apple's own
-      iOS mobile operating system. The first-generation iPhone was announced by then-Apple
-      CEO Steve Jobs on January 9, 2007. Since then, Apple has annually released new
-      iPhone models and iOS updates. As of November 1, 2018, more than 2.2 billion
-      iPhones had been sold. As of 2022, the iPhone accounts for 15.6% of global smartphone
-      market share
-    </div>
-    <hr />
-  </li>
-  <li>
-    <hr />
-    <div class="timeline-middle">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-        class="h-5 w-5"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-          clip-rule="evenodd"></path>
-      </svg>
-    </div>
-    <div class="timeline-start mb-10 md:text-end">
-      <time class="font-mono italic">2015</time>
-      <div class="text-lg font-black">Apple Watch</div>
-      The Apple Watch is a line of smartwatches produced by Apple Inc. It incorporates
-      fitness tracking, health-oriented capabilities, and wireless telecommunication,
-      and integrates with iOS and other Apple products and services
-    </div>
-  </li>
+          d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM1.6 11.85H0v3.999h.791v-1.342h.803q.43 0 .732-.173.305-.175.463-.474a1.4 1.4 0 0 0 .161-.677q0-.375-.158-.677a1.2 1.2 0 0 0-.46-.477q-.3-.18-.732-.179m.545 1.333a.8.8 0 0 1-.085.38.57.57 0 0 1-.238.241.8.8 0 0 1-.375.082H.788V12.48h.66q.327 0 .512.181.185.183.185.522m1.217-1.333v3.999h1.46q.602 0 .998-.237a1.45 1.45 0 0 0 .595-.689q.196-.45.196-1.084 0-.63-.196-1.075a1.43 1.43 0 0 0-.589-.68q-.396-.234-1.005-.234zm.791.645h.563q.371 0 .609.152a.9.9 0 0 1 .354.454q.118.302.118.753a2.3 2.3 0 0 1-.068.592 1.1 1.1 0 0 1-.196.422.8.8 0 0 1-.334.252 1.3 1.3 0 0 1-.483.082h-.563zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638z"
+        ></path>
+      </svg></button
+    >
+  </TimestepRight>
 </ul>
