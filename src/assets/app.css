@@ -3,3 +3,35 @@
   themes:
     dark --default;
 }
+
+@theme {
+  --animate-slide-left-infinite: slide-left 35s linear infinite;
+
+  @keyframes slide-left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+@theme {
+  --animate-slide-right-infinite: slide-right 35s linear infinite;
+
+  @keyframes slide-right {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
+
+@layer utilities {
+  .animation-pause {
+    animation-play-state: paused;
+  }
+}

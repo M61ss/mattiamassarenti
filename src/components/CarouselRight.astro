@@ -1,0 +1,99 @@
+---
+import CarouselCard from "./CarouselCard.astro";
+
+const { title } = Astro.props;
+---
+
+<!-- IMPORTANT: Ensure that the images cover entire screen width for a smooth transition -->
+<section class="bg-black text-white pt-8 pb-4">
+  <h2 class="text-center text-4xl lg:text-3xl mb-2 font-bold leading-8">
+    {title}
+  </h2>
+
+  <div
+    class="logos group relative overflow-hidden whitespace-nowrap py-10 [mask-image:_linear-gradient(to_left,_transparent_0,_white_128px,white_calc(100%-128px),_transparent_100%)]"
+  >
+    <div
+      class="animate-slide-right-infinite group-hover:animation-pause inline-block w-max"
+    >
+      <CarouselCard
+        src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7"
+        title="Netlify"
+      />
+      <CarouselCard
+        src="https://img.shields.io/badge/Android%20Studio-3DDC84.svg?style=for-the-badge&logo=android-studio&logoColor=white"
+        title="Android Studio"
+      />
+      <CarouselCard
+        src="https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green"
+        title="PyCharm"
+      />
+      <CarouselCard
+        src="https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white"
+        title="IntelliJ IDEA"
+      />
+      <CarouselCard
+        src="https://img.shields.io/badge/jetbrains-%23000000.svg?style=for-the-badge&logo=jetbrains&logoColor=white"
+        title="JetBrains"
+      />
+      <CarouselCard
+        src="https://img.shields.io/badge/VIM-%2311AB00.svg?style=for-the-badge&logo=vim&logoColor=white"
+        title="Vim"
+      />
+      <CarouselCard
+        src="https://img.shields.io/badge/tmux-%23000000?style=for-the-badge&logo=tmux&logoColor=%231BB91F"
+        title="tmux"
+      />
+      <CarouselCard
+        src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"
+        title="Ubuntu"
+      />
+      <CarouselCard
+        src="https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=debian&logoColor=white"
+        title="Debian"
+      />
+      <CarouselCard
+        src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"
+        title="Linux"
+      />
+      <CarouselCard
+        src="https://img.shields.io/badge/PlatformIO-%23222.svg?style=for-the-badge&logo=platformio&logoColor=%23f5822a"
+        title="PlatformIO"
+      />
+      <CarouselCard
+        src="https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white"
+        title="Arduino"
+      />
+      <CarouselCard
+        src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white"
+        title="Windows"
+      />
+      <CarouselCard
+        src="https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white"
+        title="Jupyter Notebook"
+      />
+      <CarouselCard
+        src="https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white"
+        title="Visual Studio"
+      />
+      <CarouselCard
+        src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white"
+        title="Visual Studio Code"
+      />
+      <CarouselCard
+        src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
+        title="GitHub"
+      />
+      <CarouselCard
+        src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"
+        title="Git"
+      />
+    </div>
+
+    <script>
+      var badgeList = document.querySelector("div.animate-slide-right-infinite");
+      var clone = badgeList?.cloneNode(true);
+      badgeList?.after(clone);
+    </script>
+  </div>
+</section>
