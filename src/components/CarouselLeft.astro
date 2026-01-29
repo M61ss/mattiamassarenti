@@ -1,11 +1,13 @@
 ---
 import CarouselCard from "./CarouselCard.astro";
+
+const {title} = Astro.props
 ---
 
 <!-- IMPORTANT: Ensure that the images cover entire screen width for a smooth transition -->
 <section class="bg-black text-white pt-8 pb-4">
   <h2 class="text-center text-4xl lg:text-3xl mb-2 font-bold leading-8">
-    Programmazione
+    {title}
   </h2>
 
   <div
@@ -43,6 +45,10 @@ import CarouselCard from "./CarouselCard.astro";
         title="C++"
       />
       <CarouselCard
+        src="https://img.shields.io/badge/CMake-%23008FBA.svg?style=for-the-badge&logo=cmake&logoColor=white"
+        title="CMake"
+      />
+      <CarouselCard
         src="https://img.shields.io/badge/cuda-000000.svg?style=for-the-badge&logo=nVIDIA&logoColor=green"
         title="CUDA"
       />
@@ -57,6 +63,30 @@ import CarouselCard from "./CarouselCard.astro";
       <CarouselCard
         src="https://img.shields.io/badge/ros-%230A0FF9.svg?style=for-the-badge&logo=ros&logoColor=white"
         title="ROS"
+      />
+      <CarouselCard
+        src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
+        title="HTML5"
+      />
+      <CarouselCard
+        src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"
+        title="TailwindCSS"
+      />
+      <CarouselCard
+        src="https://img.shields.io/badge/astro-%232C2052.svg?style=for-the-badge&logo=astro&logoColor=white"
+        title="Astro"
+      />
+      <CarouselCard
+        src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white"
+        title="Flask"
+      />
+      <CarouselCard
+        src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+        title="Javascript"
+      />
+      <CarouselCard
+        src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
+        title="TypeScript"
       />
       <CarouselCard
         src="https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white"
@@ -81,34 +111,6 @@ import CarouselCard from "./CarouselCard.astro";
       <CarouselCard
         src="https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white"
         title="Kotlin"
-      />
-      <CarouselCard
-        src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
-        title="HTML5"
-      />
-      <CarouselCard
-        src="https://img.shields.io/badge/css-%23663399.svg?style=for-the-badge&logo=css&logoColor=white"
-        title="CSS"
-      />
-      <CarouselCard
-        src="https://img.shields.io/badge/astro-%232C2052.svg?style=for-the-badge&logo=astro&logoColor=white"
-        title="Astro"
-      />
-      <CarouselCard
-        src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white"
-        title="Flask"
-      />
-      <CarouselCard
-        src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
-        title="Javascript"
-      />
-      <CarouselCard
-        src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
-        title="TypeScript"
-      />
-      <CarouselCard
-        src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7"
-        title="Netlify"
       />
     </div>
 
