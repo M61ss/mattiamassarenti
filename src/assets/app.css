@@ -3,3 +3,22 @@
   themes:
     dark --default;
 }
+
+@theme {
+  --animate-slide-left-infinite: slide-left 15s linear infinite;
+
+  @keyframes slide-left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+@layer utilities {
+  .animation-pause {
+    animation-play-state: paused;
+  }
+}
