@@ -72,66 +72,10 @@ import CarouselCard from "./CarouselCard.astro";
       />
     </div>
 
-    <!-- Duplicate of the above for infinite effect (you can use javascript to duplicate this too) -->
-    <div
-      class="animate-slide-left-infinite group-hover:animation-pause inline-block w-max"
-    >
-      <CarouselCard
-        src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white"
-        title="C"
-      />
-      <CarouselCard
-        src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white"
-        title="C++"
-      />
-      <CarouselCard
-        src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
-        title="Python"
-      />
-      <CarouselCard
-        src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white"
-        title="Java"
-      />
-      <CarouselCard
-        src="https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white"
-        title="Bash Script"
-      />
-      <CarouselCard
-        src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
-        title="HTML5"
-      />
-      <CarouselCard
-        src="https://img.shields.io/badge/css-%23663399.svg?style=for-the-badge&logo=css&logoColor=white"
-        title="CSS"
-      />
-      <CarouselCard
-        src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
-        title="Javascript"
-      />
-      <CarouselCard
-        src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white"
-        title="Markdown"
-      />
-      <CarouselCard
-        src="https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white"
-        title="Kotlin"
-      />
-      <CarouselCard
-        src="https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white"
-        title="LaTeX"
-      />
-      <CarouselCard
-        src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
-        title="TypeScript"
-      />
-      <CarouselCard
-        src="https://img.shields.io/badge/Windows%20Terminal-%234D4D4D.svg?style=for-the-badge&logo=windows-terminal&logoColor=white"
-        title="Windows Terminal"
-      />
-      <CarouselCard
-        src="https://img.shields.io/badge/yaml-%23ffffff.svg?style=for-the-badge&logo=yaml&logoColor=151515"
-        title="YAML"
-      />
-    </div>
+    <script>
+      var badgeList = document.querySelector("div.animate-slide-left-infinite");
+      var clone = badgeList?.cloneNode(true);
+      badgeList?.after(clone);
+    </script>
   </div>
 </section>
