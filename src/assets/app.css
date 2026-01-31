@@ -7,10 +7,8 @@
 
 @theme {
   --font-rethink: "Rethink Sans", sans-serif; 
-}
-
-@theme {
   --animate-slide-left-infinite: slide-left 35s linear infinite;
+  --animate-slide-right-infinite: slide-right 35s linear infinite;
 
   @keyframes slide-left {
     from {
@@ -20,10 +18,6 @@
       transform: translateX(-100%);
     }
   }
-}
-
-@theme {
-  --animate-slide-right-infinite: slide-right 35s linear infinite;
 
   @keyframes slide-right {
     from {
